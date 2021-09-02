@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+use Inhere\Console\Application;
+
+define('BASE_PATH', dirname(__DIR__));
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+// create app instance
+$app = new Application([
+    'debug'       => false,
+    'rootPath'    => dirname(__DIR__),
+    'description' => 'This is demo console application',
+]);
+
+$app->addCommand(HiActions\Command\HelloCommand::class);
+
+$app->run();

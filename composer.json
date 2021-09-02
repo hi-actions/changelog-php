@@ -1,0 +1,34 @@
+{
+  "name": "hi-actions/action-php-template",
+  "description": "TODO: package description",
+  "type": "project",
+  "license": "MIT",
+  "homepage": "https://github.com/hi-actions/action-php-template",
+  "authors": [
+    {
+      "name": "inhere",
+      "email": "in.798@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">7.1.0",
+    "ext-mbstring": "*",
+    "inhere/console":"~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "HiActions\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "InhereLab\\PhpPkgTest\\": "test/"
+    }
+  },
+  "bin": [
+
+  ],
+  "scripts": {
+    "test": "php vender/bin/phpunit"
+  }
+}

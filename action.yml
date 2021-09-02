@@ -1,0 +1,14 @@
+---
+# action.yml
+name: 'action-php-template'
+description: 'description action-php-template'
+author: Inhere
+runs:
+  using: 'docker'
+  # image: 'Dockerfile'
+  # image: 'docker://ghcr.io/hi-actions/action-php-template:latest'
+  # image: 'docker://docker.pkg.github.com/hi-actions/action-php-template/IMAGE_NAME:latest'
+  image: 'docker://ghcr.io/hi-actions/action-php-template:main'
+branding:
+  icon: "tag"
+  color: "blue"
